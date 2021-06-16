@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="4dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:fontFamily="cursive"
+            android:textSize="31dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/camera"
+            android:src="@drawable/camera"/>
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="350dp"
+            android:id="@+id/share"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/share" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="680dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:minHeight="50dp"
+        android:elevation="8dp"
+        android:theme="@style/TextAppearance.AppCompat.Menu"
+        android:background="@android:color/background_light"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/home"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/search"
+            android:src="@drawable/search"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/addPost"
+            android:src="@drawable/add"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/hearts"
+            android:src="@drawable/heart"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/profile"
+            android:src="@drawable/profile"/>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/storieslist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsView"
+        android:layout_width="418dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
